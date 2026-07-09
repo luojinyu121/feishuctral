@@ -1,0 +1,28 @@
+{
+  "name": "feishuctral",
+  "version": "1.0.0",
+  "description": "飞书 Claude Code 桥接器 — 通过飞书控制 Claude Code，支持会话结束自动推送任务摘要",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.62",
+    "claude-to-im": "file:./core",
+    "@larksuiteoapi/node-sdk": "^1.59.0"
+  },
+  "optionalDependencies": {
+    "@openai/codex-sdk": "^0.110.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "esbuild": "^0.25.12",
+    "tsx": "^4.23.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
